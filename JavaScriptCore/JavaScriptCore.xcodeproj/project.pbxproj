@@ -1230,7 +1230,7 @@
 		852CD84A19910F8C00610AB9 /* DebuggerPrimitives.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA0861F182B7A0400F6D851 /* DebuggerPrimitives.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD84B19910F8C00610AB9 /* DeferGC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F136D4B174AD69B0075B354 /* DeferGC.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD84C19910F8C00610AB9 /* DeferredCompilationCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC712DD17CD8778008CC93C /* DeferredCompilationCallback.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		852CD84D19910F8C00610AB9 /* DelayedReleaseScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2825CF18341F2D0087FBA9 /* DelayedReleaseScope.h */; };
+		852CD84D19910F8C00610AB9 /* DelayedReleaseScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2825CF18341F2D0087FBA9 /* DelayedReleaseScope.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD84E19910F8C00610AB9 /* DFGAbstractHeap.h in Headers */ = {isa = PBXBuildFile; fileRef = A77A423717A0BBFD00A8DB81 /* DFGAbstractHeap.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD84F19910F8C00610AB9 /* DFGAbstractInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = A704D8FE17A0BAA8006BA554 /* DFGAbstractInterpreter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD85019910F8C00610AB9 /* DFGAbstractInterpreterInlines.h in Headers */ = {isa = PBXBuildFile; fileRef = A704D8FF17A0BAA8006BA554 /* DFGAbstractInterpreterInlines.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1239,7 +1239,7 @@
 		852CD85319910F8C00610AB9 /* DFGAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB4B51916B62772003F696B /* DFGAllocator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD85419910F8C00610AB9 /* DFGAnalysis.h in Headers */ = {isa = PBXBuildFile; fileRef = A73781091799EA2E00817533 /* DFGAnalysis.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD85519910F8C00610AB9 /* DFGArgumentPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1E3A431534CBAD000F9456 /* DFGArgumentPosition.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		852CD85619910F8C00610AB9 /* JSConsoleClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C3A1A418C0490200C9593A /* JSConsoleClient.h */; };
+		852CD85619910F8C00610AB9 /* JSConsoleClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C3A1A418C0490200C9593A /* JSConsoleClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD85719910F8C00610AB9 /* DFGArgumentsSimplificationPhase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F16015B156198BF00C2587C /* DFGArgumentsSimplificationPhase.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD85819910F8C00610AB9 /* DFGArithMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F485320187750560083B687 /* DFGArithMode.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD85919910F8C00610AB9 /* DFGArrayifySlowPathGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F05C3B21683CF8F00BAF45B /* DFGArrayifySlowPathGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1594,7 +1594,7 @@
 		852CD9B619910F8C00610AB9 /* JSGlobalObjectDebuggable.h in Headers */ = {isa = PBXBuildFile; fileRef = A59455911824744700CC3843 /* JSGlobalObjectDebuggable.h */; };
 		852CD9B719910F8C00610AB9 /* JSGlobalObjectDebuggerAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = A57D23E81891B0770031C7FA /* JSGlobalObjectDebuggerAgent.h */; };
 		852CD9B819910F8C00610AB9 /* JSGlobalObjectFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC756FC70E2031B200DE7D12 /* JSGlobalObjectFunctions.h */; };
-		852CD9B919910F8C00610AB9 /* JSGlobalObjectInspectorController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51007BF187CC3C600B38879 /* JSGlobalObjectInspectorController.h */; };
+		852CD9B919910F8C00610AB9 /* JSGlobalObjectInspectorController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51007BF187CC3C600B38879 /* JSGlobalObjectInspectorController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		852CD9BA19910F8C00610AB9 /* JSGlobalObjectRuntimeAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = A50E4B6018809DD50068A46D /* JSGlobalObjectRuntimeAgent.h */; };
 		852CD9BB19910F8C00610AB9 /* JSGlobalObjectScriptDebugServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A503FA28188F105900110F14 /* JSGlobalObjectScriptDebugServer.h */; };
 		852CD9BC19910F8C00610AB9 /* JSInjectedScriptHost.h in Headers */ = {isa = PBXBuildFile; fileRef = A513E5BB185BFACC007E95AD /* JSInjectedScriptHost.h */; };
@@ -2648,7 +2648,7 @@
 		A50E4B6318809DD50068A46D /* JSGlobalObjectRuntimeAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A50E4B5F18809DD50068A46D /* JSGlobalObjectRuntimeAgent.cpp */; };
 		A50E4B6418809DD50068A46D /* JSGlobalObjectRuntimeAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = A50E4B6018809DD50068A46D /* JSGlobalObjectRuntimeAgent.h */; };
 		A51007C0187CC3C600B38879 /* JSGlobalObjectInspectorController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A51007BE187CC3C600B38879 /* JSGlobalObjectInspectorController.cpp */; };
-		A51007C1187CC3C600B38879 /* JSGlobalObjectInspectorController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51007BF187CC3C600B38879 /* JSGlobalObjectInspectorController.h */; };
+		A51007C1187CC3C600B38879 /* JSGlobalObjectInspectorController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51007BF187CC3C600B38879 /* JSGlobalObjectInspectorController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A513E5B7185B8BD3007E95AD /* InjectedScript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A513E5B5185B8BD3007E95AD /* InjectedScript.cpp */; };
 		A513E5B8185B8BD3007E95AD /* InjectedScript.h in Headers */ = {isa = PBXBuildFile; fileRef = A513E5B6185B8BD3007E95AD /* InjectedScript.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A513E5BE185BFACC007E95AD /* InjectedScriptHost.h in Headers */ = {isa = PBXBuildFile; fileRef = A513E5B9185BFACC007E95AD /* InjectedScriptHost.h */; settings = {ATTRIBUTES = (Private, ); }; };
