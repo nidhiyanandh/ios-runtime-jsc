@@ -9211,7 +9211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "JSC_HEADERS_DEST_PATH=\"$BUILT_PRODUCTS_DIR/include\"\n\n# make yarr folder and move all Yarr*.h headers in it\nmkdir \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/yarr\"\nfor f in \"$JSC_HEADERS_DEST_PATH\"/JavaScriptCore/Yarr*.h\ndo\n    BASENAME=\"`basename $f`\"\n    cp \"$f\" \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/yarr/$BASENAME\"\ndone\n\n# replace \"#include <heap/Strong.h>\" with #include \"Strong.h\" in ScriptArguments.h\nsed -i '' '35s/.*/#include \"Strong.h\"/' \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/ScriptArguments.h\"";
+			shellScript = "JSC_HEADERS_DEST_PATH=\"$BUILT_PRODUCTS_DIR/include\"\n\n# make yarr folder and move all Yarr*.h headers in it\nmkdir -p \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/yarr\"\nfor f in \"$JSC_HEADERS_DEST_PATH\"/JavaScriptCore/Yarr*.h\ndo\n    BASENAME=\"`basename $f`\"\n    cp \"$f\" \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/yarr/$BASENAME\"\ndone\n\n# replace \"#include <heap/Strong.h>\" with #include \"Strong.h\" in ScriptArguments.h\nsed -i '' '35s/.*/#include \"Strong.h\"/' \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/ScriptArguments.h\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
