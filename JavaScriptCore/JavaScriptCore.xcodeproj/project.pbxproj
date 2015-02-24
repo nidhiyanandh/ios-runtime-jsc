@@ -8772,6 +8772,7 @@
 				852CDB0A19910F8C00610AB9 /* Postprocess Headers */,
 				852CDB0B19910F8C00610AB9 /* Sources */,
 				852CDD3319910F8C00610AB9 /* Frameworks */,
+				C90B556C1A9CA69700167E14 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -9198,6 +9199,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nif [ \"${ACTION}\" = \"installhdrs\" ]; then\n    exit 0;\nfi\n\nif [ -f ../../Tools/Scripts/check-for-inappropriate-macros-in-external-headers ]; then\n    ../../Tools/Scripts/check-for-inappropriate-macros-in-external-headers Headers PrivateHeaders/JSBasePrivate.h\nfi";
+		};
+		C90B556C1A9CA69700167E14 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "JSC_HEADERS_DEST_PATH=\"$BUILT_PRODUCTS_DIR/include\"\n\n# make yarr folder and move all Yarr*.h headers in it\nmkdir \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/yarr\"\nfor f in \"$JSC_HEADERS_DEST_PATH\"/JavaScriptCore/Yarr*.h\ndo\n    BASENAME=\"`basename $f`\"\n    cp \"$f\" \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/yarr/$BASENAME\"\ndone\n\n# replace \"#include <heap/Strong.h>\" with #include \"Strong.h\" in ScriptArguments.h\nsed -i '' '35s/.*/#include \"Strong.h\"/' \"$JSC_HEADERS_DEST_PATH/JavaScriptCore/ScriptArguments.h\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -10960,7 +10974,9 @@
 				);
 				INFOPLIST_FILE = "JavaScriptCore copy-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				PRIVATE_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 				PRODUCT_NAME = JavaScriptCore;
+				PUBLIC_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 			};
 			name = Debug;
 		};
@@ -10987,7 +11003,9 @@
 				);
 				INFOPLIST_FILE = "JavaScriptCore copy-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				PRIVATE_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 				PRODUCT_NAME = JavaScriptCore;
+				PUBLIC_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 			};
 			name = Release;
 		};
@@ -11014,7 +11032,9 @@
 				);
 				INFOPLIST_FILE = "JavaScriptCore copy-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				PRIVATE_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 				PRODUCT_NAME = JavaScriptCore;
+				PUBLIC_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 			};
 			name = Profiling;
 		};
@@ -11041,7 +11061,9 @@
 					"UCONFIG_NO_COLLATION=1",
 				);
 				INFOPLIST_FILE = "JavaScriptCore copy-Info.plist";
+				PRIVATE_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 				PRODUCT_NAME = JavaScriptCore;
+				PUBLIC_HEADERS_FOLDER_PATH = include/JavaScriptCore;
 			};
 			name = Production;
 		};
